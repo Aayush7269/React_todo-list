@@ -62,6 +62,10 @@ export const FormCom = () => {
   };
   console.log(taskList);
 
+  const entryArg = taskList.filter((item) => {
+    return item.type === "Entry";
+  });
+
   return (
     <div>
       <div>
@@ -97,7 +101,7 @@ export const FormCom = () => {
             </div>
           </div>
         </form>
-        <TableList />
+        <TableList array={entryArg} />
       </div>
     </div>
   );

@@ -13,7 +13,6 @@ function App() {
         </div>
 
         <FormCom />
-        <TableList />
       </div>
     </div>
   );
